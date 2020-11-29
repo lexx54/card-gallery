@@ -78,6 +78,8 @@ footer {
   flex-direction: column;
   align-items: center;
   text-decoration: none;
+  color: white;
+  font-size: 1.4em;
 }
 #fot-logo {
   max-width: 200px;
@@ -103,14 +105,19 @@ footer {
   }
   footer {
     flex-direction: row;
+    justify-content: space-around;
   }
   #contact {
     flex-direction: column;
     flex: 0 1 10%;
     height: 100%;
   }
-  footer {
-    justify-content: space-around;
+  #contact a {
+    flex-direction: row;
+    margin-bottom: 0.3em;
+  }
+  #contact a span {
+    margin-left: 0.5em;
   }
 }
 

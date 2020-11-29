@@ -9,12 +9,13 @@ body {
 main {
   background-color: var(--secondary-color);
 }
+/*------------landing section-------*/
 #landing {
   background-color: var(--fourth-color);
   height: 40vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
 }
 #landing h1 {
@@ -25,6 +26,8 @@ main {
   font-size: 1.5em;
   line-height: 3em;
 }
+
+/*------------Gallery section-------*/
 #gallery {
   max-width: 90%;
   margin: 0 auto;
@@ -40,9 +43,7 @@ img {
 .card-container {
   text-align: center;
   background-color: var(--principal-color);
-  margin-bottom: 1em;
   border-radius: 25px;
-  padding-bottom: 1em;
   position: absolute;
   top: 15%;
   left: 15%;
@@ -53,7 +54,6 @@ img {
   font-size: 2em;
   border-bottom: 1px solid var(--fourth-color);
 }
-
 .card-container * {
   margin-bottom: 0.7em;
   font-size: 1.2em;
@@ -68,6 +68,7 @@ img {
   text-decoration: none;
   color: var(--ternary-color);
 }
+/*------------footer section-------*/
 footer {
   background-color: var(--fourth-color);
   display: flex;
@@ -77,8 +78,8 @@ footer {
 #contact {
   display: flex;
   width: 100%;
-  justify-content: space-around;
-  font-size: 1.5em;
+  justify-content: space-between;
+  font-size: 1.6em;
 }
 #contact a {
   display: flex;
@@ -86,7 +87,6 @@ footer {
   align-items: center;
   text-decoration: none;
   color: white;
-  font-size: 1.4em;
 }
 #fot-logo {
   max-width: 200px;
@@ -96,7 +96,6 @@ footer {
   margin-bottom: 0.5em;
 }
 .link {
-  text-decoration: none;
   font-style: italic;
   color: var(--principal-color);
 }
@@ -111,21 +110,14 @@ footer {
 @media screen and (min-width: 580px) {
   #gallery {
     display: flex;
-    /* flex-wrap: wrap; */
+
     justify-content: space-between;
     max-width: 70%;
-    /* height: 70vh; */
-    /* position: relative; */
   }
 
   .card-container {
-    /* flex: 0 1 calc(50% - 1em); */
-    position: absolute;
-    /* transform: scale(50%); */
-    /* top: 15%; */
-    left: 25%;
-    right: 25%;
-    /* bottom: 5%; */
+    left: 20%;
+    right: 20%;
   }
 
   footer {
@@ -135,7 +127,6 @@ footer {
   #contact {
     flex-direction: column;
     flex: 0 1 10%;
-    height: 100%;
   }
   #contact a {
     flex-direction: row;
@@ -148,9 +139,8 @@ footer {
 /*---------test de tamano---------*/
 @media screen and (min-width: 980px) {
   .card-container {
-    /* flex: 0 1 calc(33% - 1em); */
-    left: 30%;
-    right: 30%;
+    left: 25%;
+    right: 25%;
   }
 }
 

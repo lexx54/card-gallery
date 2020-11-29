@@ -26,8 +26,12 @@ main {
   line-height: 3em;
 }
 #gallery {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
+  position: relative;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
 }
 img {
   width: 100%;
@@ -39,11 +43,15 @@ img {
   margin-bottom: 1em;
   border-radius: 25px;
   padding-bottom: 1em;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  right: 15%;
+  bottom: 5%;
 }
 .card-container h2 {
   font-size: 2em;
   border-bottom: 1px solid var(--fourth-color);
-  /* margin-bottom: 0.5em; */
 }
 
 .card-container * {
@@ -92,31 +100,34 @@ footer {
   font-style: italic;
   color: var(--principal-color);
 }
+.arrow {
+  font-size: 4em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9;
+}
+/*---------test de tamano---------*/
 @media screen and (min-width: 580px) {
   #gallery {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
-    max-width: 90%;
-    height: 70vh;
-    position: relative;
+    max-width: 70%;
+    /* height: 70vh; */
+    /* position: relative; */
   }
+
   .card-container {
-    flex: 0 1 calc(50% - 1em);
+    /* flex: 0 1 calc(50% - 1em); */
     position: absolute;
-    flex: 0 1 10%;
     /* transform: scale(50%); */
-    top: 15%;
+    /* top: 15%; */
     left: 25%;
     right: 25%;
-    bottom: 5%;
+    /* bottom: 5%; */
   }
-  .arrow {
-    font-size: 3em;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-  }
+
   footer {
     flex-direction: row;
     justify-content: space-around;
@@ -134,10 +145,12 @@ footer {
     margin-left: 0.5em;
   }
 }
-
+/*---------test de tamano---------*/
 @media screen and (min-width: 980px) {
   .card-container {
-    flex: 0 1 calc(33% - 1em);
+    /* flex: 0 1 calc(33% - 1em); */
+    left: 30%;
+    right: 30%;
   }
 }
 

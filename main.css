@@ -39,6 +39,7 @@ img {
   margin-bottom: 1em;
   border-radius: 25px;
   /* height: fit-content; */
+  padding-bottom: 1em;
 }
 .card-container h2 {
   font-size: 2em;
@@ -51,6 +52,9 @@ img {
   font-size: 1.2em;
   color: var(--secondary-color);
 }
+.card-container:last-child {
+  margin-bottom: 0em;
+}
 .btn-link {
   padding: 0.3em 1em;
   background-color: var(--fourth-color);
@@ -58,21 +62,34 @@ img {
   color: var(--ternary-color);
 }
 footer {
-  height: 20vh;
   background-color: var(--fourth-color);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 #contact {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  font-size: 1.5em;
+}
+#contact a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
 }
 #fot-logo {
-  height: 100%;
-  /* width: 100%; */
+  max-width: 200px;
+}
+#description {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+.link {
+  text-decoration: none;
+  font-style: italic;
+  color: var(--principal-color);
 }
 @media screen and (min-width: 580px) {
   #gallery {
@@ -91,6 +108,9 @@ footer {
     flex-direction: column;
     flex: 0 1 10%;
     height: 100%;
+  }
+  footer {
+    justify-content: space-around;
   }
 }
 

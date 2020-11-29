@@ -6,8 +6,12 @@
     <title>Card Gallery</title>
     <style>
       @import url(reset.css);
-      @import url(main.css);
     </style>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
@@ -60,23 +64,36 @@
           <p>Enjoy</p>
           <a href="" class="btn-link">More Info</a>
         </article>
+        <div id="btn-lft" class="arrow">
+          <i class="bx bxs-left-arrow-circle"></i>
+        </div>
+        <div id="btn-rgt" class="arrow">
+          <i class="bx bxs-right-arrow-circle"></i>
+        </div>
       </section>
     </main>
     <footer>
-      <div>
-        <img src="" alt="logo" />
+      <div id="fot-logo">
+        <img src="images/whitelogo.png" alt="logo" />
       </div>
-      <div>
-        <p>
-          Page done by <a href=""><small>CodeLexx</small></a>
-        </p>
+      <div id="description">
+        <p>Page done by <span class="link">CodeLexx</span></p>
       </div>
       <div id="contact">
-        <a href="">link 1</a>
-        <a href="">link 2</a>
-        <a href="">link 3</a>
-        <a href="">link 4</a>
-        <a href="">link 5</a>
+        <a href="https://maprojectlx.000webhostapp.com/" target="_blank"
+          ><i class="bx bx-code-alt"></i> <span>Portfolio</span></a
+        >
+        <a href="https://github.com/lexx54" target="_blank"
+          ><i class="bx bxl-github"></i> <span>GitHub</span></a
+        >
+        <a href="https://twitter.com/code_lexx" target="_blank"
+          ><i class="bx bxl-twitter"></i><span>Twitter</span></a
+        >
+        <a
+          href="https://www.linkedin.com/in/lexx-chape-01b521193/"
+          target="_blank"
+          ><i class="bx bxl-linkedin-square"></i><span>LinkedIn</span></a
+        >
       </div>
     </footer>
   </body>

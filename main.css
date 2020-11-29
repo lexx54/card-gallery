@@ -9,12 +9,13 @@ body {
 main {
   background-color: var(--secondary-color);
 }
+/*------------landing section-------*/
 #landing {
   background-color: var(--fourth-color);
   height: 40vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
 }
 #landing h1 {
@@ -25,9 +26,15 @@ main {
   font-size: 1.5em;
   line-height: 3em;
 }
+
+/*------------Gallery section-------*/
 #gallery {
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
+  position: relative;
+  height: 70vh;
+  display: flex;
+  justify-content: space-between;
 }
 img {
   width: 100%;
@@ -36,20 +43,24 @@ img {
 .card-container {
   text-align: center;
   background-color: var(--principal-color);
-  margin-bottom: 1em;
   border-radius: 25px;
-  /* height: fit-content; */
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  right: 15%;
+  bottom: 5%;
 }
 .card-container h2 {
   font-size: 2em;
   border-bottom: 1px solid var(--fourth-color);
-  /* margin-bottom: 0.5em; */
 }
-
 .card-container * {
   margin-bottom: 0.7em;
   font-size: 1.2em;
   color: var(--secondary-color);
+}
+.card-container:last-child {
+  margin-bottom: 0em;
 }
 .btn-link {
   padding: 0.3em 1em;
@@ -57,41 +68,80 @@ img {
   text-decoration: none;
   color: var(--ternary-color);
 }
+/*------------footer section-------*/
 footer {
-  height: 20vh;
   background-color: var(--fourth-color);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
 }
 #contact {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
+  font-size: 1.6em;
 }
+#contact a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+#fot-logo {
+  max-width: 200px;
+}
+#description {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+.link {
+  font-style: italic;
+  color: var(--principal-color);
+}
+.arrow {
+  font-size: 4em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9;
+}
+/*---------test de tamano---------*/
 @media screen and (min-width: 580px) {
   #gallery {
     display: flex;
-    flex-wrap: wrap;
+
     justify-content: space-between;
-    max-width: 90%;
+    max-width: 70%;
   }
+
   .card-container {
-    flex: 0 1 calc(50% - 1em);
+    left: 20%;
+    right: 20%;
   }
+
   footer {
     flex-direction: row;
+    justify-content: space-around;
   }
   #contact {
     flex-direction: column;
     flex: 0 1 10%;
-    height: 100%;
+  }
+  #contact a {
+    flex-direction: row;
+    margin-bottom: 0.3em;
+  }
+  #contact a span {
+    margin-left: 0.5em;
+  }
+}
+/*---------test de tamano---------*/
+@media screen and (min-width: 980px) {
+  .card-container {
+    left: 25%;
+    right: 25%;
   }
 }
 
-@media screen and (min-width: 980px) {
-  .card-container {
-    flex: 0 1 calc(33% - 1em);
-  }
-}
+/*------card position---*/

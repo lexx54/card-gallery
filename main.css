@@ -80,8 +80,8 @@ footer {
 #contact {
   display: flex;
   width: 100%;
-  justify-content: space-between;
-  font-size: 1.6em;
+  justify-content: space-around;
+  font-size: 3em;
 }
 #contact a {
   display: flex;
@@ -89,6 +89,9 @@ footer {
   align-items: center;
   text-decoration: none;
   color: white;
+}
+#contact a span {
+  display: none;
 }
 #fot-logo {
   max-width: 200px;
@@ -131,12 +134,14 @@ footer {
   #contact {
     flex-direction: column;
     flex: 0 1 10%;
+    font-size: 2em;
   }
   #contact a {
     flex-direction: row;
     margin-bottom: 0.3em;
   }
   #contact a span {
+    display: inline;
     margin-left: 0.5em;
   }
 }
